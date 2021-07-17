@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block body %}
+<b>contact</b>
+<form action="/contact/"  method="POST">
+  <input type="email" name="email" placeholder="enter email">
+  <input type="text" name="message" placeholder="enter message">
+  <input type="submit">
+</form>
+{% with message=get_flashed_messages() %}
+{% if message %}
+{{meassage}}
+{%  endif %}
+{% endwith %}
+  {% endblock body %}

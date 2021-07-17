@@ -1,0 +1,27 @@
+.container{
+    text-align: center;
+    font-family: "aljerian";
+    font-size: 26px;
+    height: 50px;
+    padding-top:20px;
+    padding-right: 10px;
+}
+body{
+    margin: 0px;
+    background-color:azure;
+}
+header{
+    background-color: black;
+    color: white;
+}
+span{
+    padding: 2px 4px;
+}
+span:hover{
+    background-color:white;
+    color: black;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
