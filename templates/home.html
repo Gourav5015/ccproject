@@ -1,4 +1,23 @@
 {% extends "index.html" %}
+{% block title %}Home{% endblock title %}
+{% block home %}active{% endblock home %}
 {% block body %}
-<b>home {{profile["name"]}} {{profile["last"]}}</b>
+<b><h1 style="text-align: center;">Photpholio</h1></b>
+<div class="container">
+  <span>Name : Gourav Agarwal</span>
+</br>
+  <span>D.O.B : 26 <sup>th</sup> June 2001</span>
+</br>
+<span>
+  Programming Skills :C(beginner), Python(beginner)
+</span>
+</br>
+<span>
+  Database: MongoDB, MySQL
+</span>
+</br>
+<span>
+  Other blog website : <a href="https://sharedspace.pythonanywhere.com" target=blank style="text-decoration: underline;">Sharedspace.com</a> Based on Django  
+</span>
+</div>
   {% endblock body %}

@@ -1,14 +1,20 @@
 {% extends "index.html" %}
+{% block title %}Contact Us{% endblock title %}
+{% block contact %}active{% endblock contact %}
 {% block body %}
-<b>contact</b>
-<form action="/contact/"  method="POST">
+<div class="form">
+  <h1 class="contact">Contact Us</h1>
+<form action="/contact/"  method="POST" autocomplete="off">
+  <h4>
+    Email
+  </h4>
   <input type="email" name="email" placeholder="enter email">
+  <h4>
+    Message
+  </h4>
   <input type="text" name="message" placeholder="enter message">
   <input type="submit">
 </form>
-{% with message=get_flashed_messages() %}
-{% if message %}
-{{meassage}}
-{%  endif %}
-{% endwith %}
+</div>
+
   {% endblock body %}
